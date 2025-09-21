@@ -37,3 +37,7 @@ This project involves cloning a professional Figma design for "SmileSchool" - a 
 - Flexbox and CSS Grid for layout management
 - Optimized images and proper alt text for accessibility
 - Cross-browser compatible CSS
+
+## 🎨 Project Overview
+<img width="792" height="809" alt="image" src="https://github.com/user-attachments/assets/7825bc12-bb42-413b-9428-ff89037f10a2" />
+
