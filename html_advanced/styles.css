@@ -207,3 +207,201 @@ body {
         font-size: 3rem;
     }
 }
+
+/* Quote section */
+.quote-section {
+    background: linear-gradient(135deg, #C271FF 0%, #9356DC 100%);
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.quote-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.quote-content {
+    color: white;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quote-author {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+}
+
+.quote-title {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Quote responsive */
+@media (max-width: 768px) {
+    .quote-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .quote-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .quote-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Tutorials section */
+.tutorials-section {
+    background-color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.tutorials-title {
+    font-size: 2rem;
+    color: #071629;
+    margin-bottom: 4rem;
+    font-weight: 400;
+}
+
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.tutorial-thumbnail {
+    width: 100%;
+    height: 154px;
+    object-fit: cover;
+    position: relative;
+}
+
+.tutorial-title {
+    font-size: 1rem;
+    color: #071629;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.tutorial-description {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 0.85rem;
+    color: #C271FF;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tutorial-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.star.filled {
+    color: #C271FF;
+}
+
+.duration {
+    font-size: 0.85rem;
+    color: #C271FF;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Tutorial responsive */
+@media (max-width: 768px) {
+    .tutorials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tutorials-section {
+        padding: 3rem 1rem;
+    }
+}
